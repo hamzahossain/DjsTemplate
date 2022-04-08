@@ -1,0 +1,34 @@
+{
+  "name": "djstemplate",
+  "version": "0.0.1",
+  "description": "A template for bots made in DJS",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "format": "eslint --fix src",
+    "build": "tsc",
+    "start": "node .",
+    "format:test-build": "npm run format && npm run test && npm run build",
+    "watch": "nodemon --watch ./src --ext ts --exec \"npm run format:test-build\""
+  },
+  "author": "hamzahossain",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "fast-glob": "^3.2.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
